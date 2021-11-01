@@ -18,8 +18,6 @@ exports.checkAccountPayload = (req, res, next) => {
       message: "budget of account is too large or too small",
     });
   } else {
-    req.name = name;
-    req.budget = budget;
     next();
   }
 };
